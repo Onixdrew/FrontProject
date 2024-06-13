@@ -20,6 +20,10 @@ import Register from './pages/Register';
 
 /// Rol Aprendiz
 
+import Inicio_Aprendiz from "./pages/interfaces/Aprendiz/paginasAprendiz/inicioAprendiz";
+import Objetos_Aprendiz from "./pages/interfaces/Aprendiz/paginasAprendiz/objetosAprendiz";
+import Historial_Aprendiz from "./pages/interfaces/Aprendiz/paginasAprendiz/historialAprendiz";
+
 function App() {
 
   const AppRoutes = () => {
@@ -38,6 +42,10 @@ function App() {
       // Rutas Instructor
 
       // Rutas Aprendiz
+
+      {path: "/inicioAprendiz", element: <Inicio_Aprendiz />},
+      {path: "/objetosAprendiz", element: <Objetos_Aprendiz />},
+      {path: "/historialAprendiz", element: <Historial_Aprendiz />},
 
     ]);
     return routes;
